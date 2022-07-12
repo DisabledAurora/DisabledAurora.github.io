@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gururam</title>
+    <meta name="description" content="This website is entitled to Subramanian Gururam of Engineering Science,
+    Ngee Ann Polytechnic, batch 2020. The purpose of this documentation is to prepare for any E-portfolio
+    requirements that may be posed upon me in the near future." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/style/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="/img/tabicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
+        integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII=" crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"
+        integrity="sha256-6nMNBYfyROdV6ao6x/RnA8pcQvmL2OH3B+oDZ+EEcmk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/905e574296.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="./app/manifest.json" />
+    <meta name="theme-color" content="#bada55" />
+    <link rel="apple-touch-icon" href="./app/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#bada55" />
+</head>
+
+<body>
+    <div class="fire" id="Intro">
+        <div class="flames">
+            <div class="flame"></div>
+            <div class="flame"></div>
+            <div class="flame"></div>
+            <div class="flame"></div>
+        </div>
+        <div class="logs"></div>
+    </div>
+    <header>
+        <a>
+            <pre class="term"></pre>
+        </a>
+    </header>
+    <section class="top" id="home">
+        <div id="clock">
+            <p class="date" id="date">{{ date }}</p>
+            <p class="time" id="time">{{ time }}</p>
+        </div>
+        <model-viewer src="/threejsModel/scene.gltf" camera-controls auto-rotate enable-pan touch-action
+            rotation-per-second="135deg" auto-rotate-delay="500" interaction-prompt-style="wiggle">
+        </model-viewer>
+        <img src="/img/starsEx.webp" id="stars" alt="Spread out white star like figures to create ambience">
+        <img src="/img/moon_1.webp" id="moon" alt="Moon is quite of the hallmark of the parallax design">
+        <img src="/img/mountains_behind_1.webp" id="mountb" alt="Mountain range, associated to being the background">
+        <h2 id="message">Bonjour!</h2>
+        <img src="/img/mountains_front_1.webp" id="mountf" alt="Mountain range, associated to being the foreground">
+        <div class="scroll-down"></div>
+        <ul class="menu" id="fmenu">
+            <li class="home active">
+                <a href="#home" class="items"><span class="material-symbols-rounded">
+                        home
+                    </span></a>
+            </li>
+            <li class="aboutme">
+                <a href="#aboutme" class="items"><span class="material-symbols-rounded">
+                        account_circle
+                    </span></a>
+            </li>
+            <li class="timeline">
+                <a href="#timeline" class="items"><span class="material-symbols-rounded">
+                        timeline
+                    </span></a>
+            </li>
+            <li class="Projects">
+                <a href="#Projects" class="items"><span class="material-symbols-rounded">
+                        bolt
+                    </span></a>
+            </li>
+            <li class="Achievements">
+                <a href="#Achievements" class="items"><span class="material-symbols-rounded">
+                        whatshot
+                    </span></a>
+            </li>
+            <li class="workHistory">
+                <a href="#workHistory" class="items"><span class="material-symbols-rounded">
+                        work_history
+                    </span></a>
+            </li>
+            <li class="Contact">
+                <a href="#Contact" class="items"><span class="material-symbols-rounded">
+                        diversity_1
+                    </span></a>
+            </li>
+        </ul>
+    </section>
+    <section id="aboutme">
+        <div id="particles-js">
+            <div class="content">
+                <h2 style="color: #0ee3d1;">
+                    About me
+                </h2>
+                <div class="block">
+                    <div class="row">
+                        <div class="column">
+                            <div class="descriptionaboutme">
+                                <p>
+                                    I am Subramanian Gururam, scholar pursuing Engineering Science at Ngee Ann
+                                    Polytechnic. I am passionate about defying the odds and achieving greatness. I would
+                                    regard myself as a visionary person as much as I give attention to details. My
+                                    vision in life is to be a conscientious man, to contribute back to the society.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="stage-cube-cont">
+                                <div class="cubespinner">
+                                    <div class="face1">
+                                        <i class="fa-brands fa-sass" style="color: #c26290;"></i>
+                                    </div>
+                                    <div class="face2">
+                                        <i class="fa-brands fa-python" style="color: #f3c74b;"></i>
+                                    </div>
+                                    <div class="face3">
+                                        <i class="fa-brands fa-js-square" style="color: #ebd130;"></i>
+                                    </div>
+                                    <div class="face4">
+                                        <i class="fa-brands fa-html5" style="color: #e55b2b;"></i>
+                                    </div>
+                                    <div class="face5">
+                                        <i class="fa-brands fa-git-alt" style="color: #e44632;"></i>
+                                    </div>
+                                    <div class="face6">
+                                        <i class="fa-brands fa-atlassian" style="color: #0055c0;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="timeline">
+        <div id="particles-js1">
+            <div class="content">
+                <h2>
+                    Education Progress
+                </h2>
+                <div class="block" style="overflow: auto; pointer-events: auto; display: block;">
+                    <div class="timeline">
+                        <div class="timeline__event timeline__event--type1">
+                            <div class="timeline__event__icon ">
+                                <div class="timeline__event__date">
+                                    2010 - 2016
+                                </div>
+                            </div>
+                            <div class="timeline__event__content ">
+                                <div class="timeline__event__title">
+                                    Primary school
+                                </div>
+                                <div class="timeline__event__description">
+                                    <p>West Grove Primary School</p>
+                                    <img src="/img/PrimarySchImg.webp" class="imgzoom">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__event timeline__event--type2">
+                            <div class="timeline__event__icon">
+                                <div class="timeline__event__date">
+                                    2017 - 2020
+                                </div>
+                            </div>
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__title">
+                                    Secondary School
+                                </div>
+                                <div class="timeline__event__description">
+                                    <p>Yuan Ching Secondary School</p>
+                                    <img src="/img/SecSchImg.webp" class="imgzoom">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__event timeline__event--type3">
+                            <div class="timeline__event__icon">
+                                <i class="lni-slim"></i>
+                                <div class="timeline__event__date">
+                                    2021 - Present
+                                </div>
+                            </div>
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__title">
+                                    Pre-University
+                                </div>
+                                <div class="timeline__event__description">
+                                    <p>Ngee Ann Polytechnic</p>
+                                    <img src="/img/PreUImg.webp" class="imgzoom">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <div id="particles-js2">
+            <div class="content">
+                <h2>
+                    Projects
+                </h2>
+                <div class="block" style="overflow: auto; pointer-events: auto; display: block;">
+                    <div class="swiper mySwiper swiper-h">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Horizontal Slide 1</div>
+                            <div class="swiper-slide">
+                                <div class="swiper mySwiper2 swiper-v">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">Vertical Slide 1</div>
+                                        <div class="swiper-slide">Vertical Slide 2</div>
+                                        <div class="swiper-slide">Vertical Slide 3</div>
+                                        <div class="swiper-slide">Vertical Slide 4</div>
+                                        <div class="swiper-slide">Vertical Slide 5</div>
+                                    </div>
+                                    <div class="swiper-pagination swiper-pagination2"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">Horizontal Slide 3</div>
+                            <div class="swiper-slide">Horizontal Slide 4</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Achievements">
+        <div id="particles-js3">
+            <div class="content">
+                <h2>
+                    Achievements
+                </h2>
+                <div class="block" style="overflow: auto; pointer-events: auto; display: block;">
+                    <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                hi
+                            </div>
+                            <div class="swiper-slide">
+                                hi
+                            </div>
+                            <div class="swiper-slide">
+                                hi
+                            </div>
+                            <div class="swiper-slide">
+                                hi
+                            </div>
+                        </div>
+                        <div class="swiper-button-next-3"></div>
+                        <div class="swiper-button-prev-3"></div>
+                        <div class="swiper-pagination-3"></div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- JS scripts -->
+
+    <!-- Registering the service worker. -->
+    <script type="text/javascript">
+        if (navigator.serviceWorker.controller) {
+            console.log('[PWA Builder] Active service worker found! No registeration was done.')
+        }
+        else {
+            navigator.serviceWorker.register('app-build.js', {
+                scope: '/'
+            }).then(function (reg) {
+                console.log('[PWA Builder] Service worker created for scope: ' + reg.scope);
+            });
+        }
+    </script>
+
+    <script>
+        // Listen to images after DOM content is fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            new Zooming({
+                // options...
+                bgColor: 'rgba(0,0,0,0)',
+                customSize: '50%',
+                scaleExtra: 1.1,
+            }).listen('.imgzoom')
+            new Zooming({
+                // options...
+                bgColor: 'rgba(0,0,0,0)',
+                customSize: '50%',
+                scaleExtra: 2,
+            }).listen('.imgzoomxtra')
+        })
+    </script>
+
+    <!-- Initializing the emailjs service. -->
+    <script type="text/javascript">
+            (function () {
+                emailjs.init("ic9Xg-Qbtzwgw84Ng");
+            })();
+    </script>
+
+    <!-- threeJS management -->
+
+    <!-- Imports of external JS > Particles -->
+    <script src="/js_particles/particles/particles.js"></script>
+    <script async src="/js_particles/app/app.js"></script>
+    <script src="/js_particles/particles/particles1.js"></script>
+    <script async src="/js_particles/app/app1.js"></script>
+    <script src="/js_particles/particles/particles2.js"></script>
+    <script async src="/js_particles/app/app2.js"></script>
+    <script src="/js_particles/particles/particles3.js"></script>
+    <script async src="/js_particles/app/app3.js"></script>
+    <script src="/js_particles/particles/particles4.js"></script>
+    <script async src="/js_particles/app/app4.js"></script>
+    <script src="/js_particles/particles/particles5.js"></script>
+    <script async src="/js_particles/app/app5.js"></script>
+
+    <!-- Imports of external JS > General -->
+    <script src="/js_basic/Carousel.js"></script>
+    <script src="/js_basic/Checkbox.js"></script>
+    <script src="/js_basic/clock.js"></script>
+    <script src="/js_basic/Console.js"></script>
+    <script src="/js_basic/Emailsend.js"></script>
+    <script src="/js_basic/Menu.js"></script>
+    <script src="/js_basic/Parallex.js"></script>
+    <script src="/js_basic/Splash.js"></script>
+    <script src="/js_basic/swiper.js"></script>
+    <script src="/js_basic/Tabs.js"></script>
+</body>
+
+</html>
