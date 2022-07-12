@@ -1,0 +1,11 @@
+Model Information:
+* title:	SS2 V5 Assault Rifle
+* source:	https://sketchfab.com/3d-models/ss2-v5-assault-rifle-a74ab1d4c3324d48a0cc91dfc96298dc
+* author:	Michael Karel (https://sketchfab.com/michaelkarel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SS2 V5 Assault Rifle" (https://sketchfab.com/3d-models/ss2-v5-assault-rifle-a74ab1d4c3324d48a0cc91dfc96298dc) by Michael Karel (https://sketchfab.com/michaelkarel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

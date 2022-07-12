@@ -342,12 +342,17 @@ body section.top #clock .date {
 }
 body section.top model-viewer {
   position: fixed;
-  width: 8em;
-  height: 8em;
+  width: 7vmax;
+  height: 7vmax;
   margin: 0 auto;
   top: 0;
   right: 0;
   z-index: 10;
+}
+@media screen and (max-width: 1200px) {
+  body section.top model-viewer {
+    display: none;
+  }
 }
 body section.top h2#message {
   position: absolute;

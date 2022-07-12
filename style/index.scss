@@ -338,14 +338,18 @@ body {
                 }
             }
 
-            model-viewer{
+            model-viewer {
                 position: fixed;
-                width: 8em;
-                height: 8em;
+                width: 7vmax;
+                height: 7vmax;
                 margin: 0 auto;
                 top: 0;
                 right: 0;
                 z-index: 10;
+
+                @media screen and (max-width: 1200px) {
+                    display: none;
+                }
             }
 
             h2#message {
