@@ -56,13 +56,9 @@
             <p class="date" id="date">{{ date }}</p>
             <p class="time" id="time">{{ time }}</p>
         </div>
-        <model-viewer src="/threejsModel/scifi_motorcycle_project_mx_2/scene.gltf" camera-controls auto-rotate enable-pan touch-action
-            rotation-per-second="90deg" auto-rotate-delay="500" interaction-prompt-style="wiggle"></model-viewer>
-        <!-- <div class="sketchfab-embed-wrapper"> <iframe title="Buster Drone" frameborder="0" allowfullscreen
-                mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-                xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
-                src="https://sketchfab.com/models/294e79652f494130ad2ab00a13fdbafd/embed?autospin=1&autostart=1&preload=1&ui_theme=dark">
-            </iframe> </div> -->
+        <model-viewer src="/threejsModel/scifi_motorcycle_project_mx_2/scene.gltf" camera-controls auto-rotate
+            touch-action rotation-per-second="45deg" auto-rotate-delay="500" interaction-prompt-style="wiggle">
+        </model-viewer>
         <img src="/img/starsEx.webp" id="stars" alt="Spread out white star like figures to create ambience">
         <img src="/img/moon_1.webp" id="moon" alt="Moon is quite of the hallmark of the parallax design">
         <img src="/img/mountains_behind_1.webp" id="mountb" alt="Mountain range, associated to being the background">
@@ -279,12 +275,94 @@
                         <div class="swiper-button-next-3"></div>
                         <div class="swiper-button-prev-3"></div>
                         <div class="swiper-pagination-3"></div>
-
                     </div>
                 </div>
             </div>
     </section>
 
+    <section id="workHistory">
+        <div id="particles-js4">
+            <div class="content">
+                <h2>
+                    Work History
+                </h2>
+                <div class="block" style="overflow: auto; pointer-events: auto; display: block;">
+                    <div id="Tabby">
+                        <div class="cox">
+                            <!-- Tab links -->
+                            <div class="tabs">
+                                <button class="tablinks active" data-country="GLS">
+                                    <p data-title="GLS">GLS</p>
+                                </button>
+                                <button class="tablinks" data-country="Redmart">
+                                    <p data-title="Redmart">Redmart</p>
+                                </button>
+                                <button class="tablinks" data-country="Usher">
+                                    <p data-title="MBCC">MBCC</p>
+                                </button>
+                                <button class="tablinks" data-country="STE">
+                                    <p data-title="STE">ST Engineering</p>
+                                </button>
+                            </div>
+
+                            <!-- Tab content -->
+                            <div class="wrapper_tabcontent">
+                                <div id="GLS" class="tabcontent active">
+                                    <h3>GLS</h3>
+                                    <p>- Ad hoc working environment, with varying job intensity.<br />
+                                        - Assigned and was able to shift products weighing about 20 kg
+                                        occasionally.<br />
+                                        - Used pre-established automated systems to carry out product listing.
+                                    </p>
+                                    <img src="/img/GLS.webp" class="card-img imgzoom">
+                                </div>
+
+                                <div id="Redmart" class="tabcontent">
+                                    <h3>Redmart</h3>
+                                    <p class="smol">- Maintaining inbound statistics and orders, ranging up to 30'000
+                                        products in a
+                                        single order.
+                                        <br />
+                                        - Interacting with the
+                                        supplier and maintaining remarkable buyer-supplier relationships.
+                                        <br />
+                                        - Quality and quantity checks on received products, rectifying any anomalies in
+                                        check, including but not limited to,
+                                        short-expiry issues, overdelivered, partial delivery and incorrect data.
+                                        <br />
+                                        - Maintain error-free system logs for the products received, for future audits,
+                                        inspections, and product cross-checking.
+                                    </p>
+                                    <img src="https://pngimage.net/wp-content/uploads/2018/06/redmart-logo-png-2.png"
+                                        class="card-img">
+                                </div>
+
+                                <div id="Usher" class="tabcontent">
+                                    <h3>MBCC</h3>
+                                    <p>-Basic ushering and crowd-control was practiced, with training.
+                                        <br />
+                                        -Checking-in and accounting for the passenger count were the main roles in this
+                                        job.
+                                    </p>
+                                    <img src="/img/mbcc.webp" class="card-img imgzoom">
+                                </div>
+
+                                <div id="STE" class="tabcontent">
+                                    <h3>STE</h3>
+                                    <p>Working at ST Engineering is my first ever official Internship that I have gone
+                                        to. From a structured school and education lifestyle, to an unstructured, and
+                                        new environment, this internship gave me the opportunity to experience what it
+                                        takes to be a working adult in the industry. Taught me a lot of technical as
+                                        well as social skills, that I previously lack.</p>
+                                    <img src="/img/Intern.webp" class="card-img imgzoomxtra">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- JS scripts -->
 

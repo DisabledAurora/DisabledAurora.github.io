@@ -4,4 +4,4 @@ $("body").fadeIn(1500);
 setTimeout(function () {
   fire.classList.add("zoom");
   $(".fire").fadeOut(1500);
-}, 2000);
+}, 5500);
