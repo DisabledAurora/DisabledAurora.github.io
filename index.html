@@ -364,6 +364,45 @@
         </div>
     </section>
 
+    <section id="Contact">
+        <div id="particles-js5">
+            <div class="content">
+                <h2>
+                    Contact
+                </h2>
+                <div class="block" style="overflow: auto; pointer-events: auto; display: flex;">
+                    <form novalidate>
+                        <div class="col-sm">
+                            <div class="form-field">
+                                <div class="form-field__control">
+                                    <label for="Name" class="form-field__label">Name</label>
+                                    <input id="Name" type="text" class="form-field__input" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-field">
+                                <div class="form-field__control">
+                                    <label for="Email" class="form-field__label">Email</label>
+                                    <input id="Email" type="email" class="form-field__input" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-field">
+                                <div class="form-field__control">
+                                    <label for="msg" class="form-field__label">Message</label>
+                                    <textarea id="msg" class="form-field__textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="submitbutton" onclick="sendMail()"><p>Send!</p></button>
+                    </form>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- JS scripts -->
 
     <!-- Registering the service worker. -->
@@ -432,6 +471,7 @@
     <script src="/js_basic/Splash.js"></script>
     <script src="/js_basic/swiper.js"></script>
     <script src="/js_basic/Tabs.js"></script>
+    <script src="/js_basic/contactform.js"></script>
 </body>
 
 </html>

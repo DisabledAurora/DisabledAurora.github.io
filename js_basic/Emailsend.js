@@ -6,7 +6,6 @@ function sendMail(params) {
   var tempv = {
     name: document.getElementById("Name").value,
     email: document.getElementById("Email").value,
-    phone: document.getElementById("Phone").value,
     message: document.getElementById("msg").value,
   };
   if (tempv.name != "" && tempv.email != "") {
@@ -15,7 +14,7 @@ function sendMail(params) {
       .then((result) => {
         alert("Successfully sent!");
 
-        const inputs = document.querySelectorAll("#Name, #msg, #Email, #Phone");
+        const inputs = document.querySelectorAll("#Name, #msg, #Email");
 
         inputs.forEach((input) => {
           input.value = "";
