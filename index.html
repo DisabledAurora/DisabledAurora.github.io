@@ -56,8 +56,8 @@
             <p class="date" id="date">{{ date }}</p>
             <p class="time" id="time">{{ time }}</p>
         </div>
-        <model-viewer src="/threejsModel/Pistol_and_Kukri/scene.gltf" camera-controls auto-rotate
-            touch-action rotation-per-second="45deg" auto-rotate-delay="500" interaction-prompt-style="wiggle">
+        <model-viewer src="/threejsModel/Pistol_and_Kukri/scene.gltf" camera-controls auto-rotate touch-action
+            rotation-per-second="45deg" auto-rotate-delay="500" interaction-prompt-style="wiggle">
         </model-viewer>
         <img src="/img/starsEx.webp" id="stars" alt="Spread out white star like figures to create ambience">
         <img src="/img/moon_1.webp" id="moon" alt="Moon is quite of the hallmark of the parallax design">
@@ -371,6 +371,15 @@
                     Contact
                 </h2>
                 <div class="block" style="overflow: auto; pointer-events: auto; display: flex;">
+                    <div class="alert success-alert nodisplaynow" id="success">
+                        <h3>Success Alert Message</h3>
+                        <a class="close">&times;</a>
+                    </div>
+
+                    <div class="alert danger-alert nodisplaynow" id="failure">
+                        <h3>Danger Alert Message</h3>
+                        <a class="close">&times;</a>
+                    </div>
                     <form novalidate>
                         <div class="col-sm">
                             <div class="form-field">
@@ -396,8 +405,10 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="submitbutton" onclick="sendMail()"><p>Send!</p></button>
-                    </form>                    
+                        <button type="button" class="submitbutton" onclick="sendMail()">
+                            <p>Send!</p>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -472,6 +483,7 @@
     <script src="/js_basic/swiper.js"></script>
     <script src="/js_basic/Tabs.js"></script>
     <script src="/js_basic/contactform.js"></script>
+    <script src="/js_basic/buttonalert.js"></script>
 </body>
 
 </html>
