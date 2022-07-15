@@ -17,6 +17,8 @@ function sendMail(params) {
       .send("service_svyxp0d", "template_p1xdv1g", tempv)
       .then((result) => {
         ye.classList.remove("nodisplaynow");
+        ye.classList.add("displaynow");
+        ye.style.zIndex = "2";
 
         const inputs = document.querySelectorAll("#Name, #msg, #Email");
         inputs.forEach((input) => {
@@ -25,6 +27,8 @@ function sendMail(params) {
       })
       .catch((e) => {
         nah.classList.remove("nodisplaynow");
+        nah.classList.add("displaynow");
+        nah.style.zIndex = "2";
       });
   }
 }

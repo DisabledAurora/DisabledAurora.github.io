@@ -1,5 +1,7 @@
 $(".close").click(function() {
   $(this)
     .parent(".alert")
-    .fadeOut();
+    .removeClass("displaynow")
+    .addClass("nodisplaynow")
+    .css({'z-index':'1'});
 });

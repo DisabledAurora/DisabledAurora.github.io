@@ -500,6 +500,61 @@ body {
         display: flex;
         flex-direction: column;
 
+        .alert {
+            pointer-events: auto !important;
+            width: 40%;
+            right: 30%;
+            margin: auto;
+            top: 0px;
+            padding: 30px;
+            position: absolute;
+            border-radius: 5px;
+            box-shadow: var(--GlowUp);
+            z-index: 1;
+            transition: opacity 0.5s ease-in-out;
+
+
+            &.nodisplaynow {
+                opacity: 0;
+            }
+
+            &displaynow {
+                opacity: 1;
+            }
+        }
+
+        .close {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            opacity: 0.5;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 50%;
+            right: 15px;
+            top: 25px;
+            text-align: center;
+            font-size: 1.6em;
+            cursor: pointer;
+        }
+
+        @mixin alert($name, $bgColor) {
+            $accentColor: darken($bgColor, 50);
+
+            .#{$name} {
+                background-color:#{$bgColor};
+                border-left: 5px solid $accentColor;
+
+                .close {
+                    border-color: $accentColor;
+                    color: $accentColor;
+                }
+            }
+        }
+
+        @include alert(success-alert, #a8f0c6);
+        @include alert(danger-alert, #f7a7a3);
+
         .block {
             height: 85%;
             width: 95%;
@@ -1084,54 +1139,6 @@ body {
                 font-size: 0.75rem;
                 transform: translateY(-14px);
             }
-
-            .alert {
-                width: 70%;
-                margin: auto;
-                bottom: 1em;
-                padding: 30px;
-                position: absolute;
-                border-radius: 5px;
-                box-shadow: var(--GlowUp);
-                z-index: 1;
-
-                &.nodisplaynow{
-                    transition: all 0.5s ease-in-out;
-                    display: none;
-                }
-            }
-
-            .close {
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                opacity: 0.5;
-                border-width: 1px;
-                border-style: solid;
-                border-radius: 50%;
-                right: 15px;
-                top: 25px;
-                text-align: center;
-                font-size: 1.6em;
-                cursor: pointer;
-            }
-
-            @mixin alert($name, $bgColor) {
-                $accentColor: darken($bgColor, 50);
-
-                .#{$name} {
-                    background-color:#{$bgColor};
-                    border-left: 5px solid $accentColor;
-
-                    .close {
-                        border-color: $accentColor;
-                        color: $accentColor;
-                    }
-                }
-            }
-
-            @include alert(success-alert, #a8f0c6);
-            @include alert(danger-alert, #f7a7a3);
 
             .submitbutton {
                 width: 40%;
