@@ -1132,8 +1132,8 @@ body .content .block .submitbutton {
   margin-bottom: 10vh;
   background-color: var(--justoppositeoftheme);
   border-radius: 1em;
-  -webkit-transition: all var(--animationtime) ease-in-out;
-  transition: all var(--animationtime) ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 body .content .block .submitbutton:hover {
   -webkit-transform: scale(1.1);
@@ -1145,8 +1145,8 @@ body .content .block .submitbutton:hover p {
 }
 body .content .block .submitbutton p {
   margin-bottom: 0px;
-  -webkit-transition: all var(--animationtime) ease-in-out;
-  transition: all var(--animationtime) ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: var(--justtheme);
 }
 body .content .block form {
