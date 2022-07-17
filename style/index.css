@@ -815,6 +815,56 @@ body .content .block .swiper .swiper .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 3em;
+     -moz-column-gap: 3em;
+          column-gap: 3em;
+}
+@media screen and (max-width: 1200px) {
+  body .content .block .swiper .swiper .swiper-slide.imgonly {
+    display: none;
+  }
+}
+body .content .block .swiper .swiper .swiper-slide img.card-img {
+  position: static !important;
+  border-radius: 1em;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-animation: fadeEffect 0.6s ease;
+          animation: fadeEffect 0.6s ease;
+  margin: auto;
+}
+body .content .block .swiper .swiper .swiper-slide img.card-img.vert {
+  width: auto;
+  height: 100%;
+}
+body .content .block .swiper .swiper .swiper-slide img.card-img.hori {
+  width: 55%;
+  height: auto;
+}
+@media screen and (max-width: 1200px) {
+  body .content .block .swiper .swiper .swiper-slide img.card-img {
+    display: none;
+  }
+}
+body .content .block .swiper .swiper .swiper-slide a {
+  text-decoration: none;
+}
+body .content .block .swiper .swiper .swiper-slide.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .content .block .swiper .swiper .swiper-slide P {
+  width: 80%;
+  margin: auto;
 }
 body .content .block .swiper .swiper .swiper-slide:nth-child(3n+1) {
   background: var(--type1glass);

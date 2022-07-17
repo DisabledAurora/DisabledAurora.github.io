@@ -794,6 +794,51 @@ body {
                         backdrop-filter: blur(10px);
                         border: 4mm ridge var(--splashscreenbackground);
                         display: flex;
+                        flex-direction: column;
+                        column-gap: 3em;
+
+                        &.imgonly {
+                            @media screen and (max-width: 1200px) {
+                                display: none;
+                            }
+                        }
+
+                        img.card-img {
+                            position: static !important;
+
+                            &.vert {
+                                width: auto;
+                                height: 100%;
+                            }
+
+                            &.hori {
+                                width: 55%;
+                                height: auto;
+                            }
+
+                            border-radius: 1em;
+                            transition: all 1s ease;
+                            animation: fadeEffect 0.6s ease;
+                            margin: auto;
+
+                            @media screen and (max-width: 1200px) {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                        }
+
+                        &.split {
+                            display: flex;
+                            flex-direction: row;
+                        }
+
+                        P {
+                            width: 80%;
+                            margin: auto;
+                        }
                     }
 
                     .swiper-slide:nth-child(3n+1) {

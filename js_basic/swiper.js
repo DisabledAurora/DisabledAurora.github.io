@@ -26,7 +26,7 @@ var swiper2 = new Swiper(".mySwiper2", {
   grabCursor: true,
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   direction: "vertical",
   effect: "fade",
@@ -41,7 +41,7 @@ var swiper3 = new Swiper(".mySwiper3", {
   // effect: "fade",
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   effect: "creative",
   creativeEffect: {
