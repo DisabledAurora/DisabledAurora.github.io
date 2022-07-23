@@ -890,6 +890,10 @@ body .content .block .swiper .swiper-slide {
       -ms-flex-pack: center;
           justify-content: center;
 }
+body .content .block .swiper .swiper-slide.spacearnd {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 body .content .block .swiper .swiper-slide:nth-child(3n+1) {
   background: var(--type1);
 }
