@@ -1179,7 +1179,6 @@ body .content .block .tabcontent h3 {
   width: 200px;
   height: 60px;
   background: -webkit-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0;
   -webkit-animation: city 1s ease;
