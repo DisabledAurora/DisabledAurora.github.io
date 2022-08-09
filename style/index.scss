@@ -340,10 +340,10 @@ body {
                 }
             }
 
-            model-viewer {
+            .Right {
                 position: fixed;
-                width: 7vmax;
-                height: 7vmax;
+                width: 5vmax;
+                height: 5vmax;
                 margin: 0 auto;
                 top: 0;
                 right: 0;
@@ -436,6 +436,12 @@ body {
             &#moon {
                 mix-blend-mode: screen;
             }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        canvas{
+            visibility: hidden;
         }
     }
 
