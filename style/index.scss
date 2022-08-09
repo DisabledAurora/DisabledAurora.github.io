@@ -560,7 +560,8 @@ body {
             width: 95%;
             border-radius: 1em;
             margin: auto;
-            background: var(--background2block);
+            // background: var(--background2block);
+            box-shadow: var(--GlowUp);
             border: 1px solid var(--justoppositeoftheme);
             display: flex;
             backdrop-filter: blur(3px);
@@ -651,6 +652,7 @@ body {
                     .descriptionaboutme {
                         background: var(--glass);
                         border: 1px solid var(--justoppositeoftheme);
+                        box-shadow: var(--GlowUp);
                         // column-count: 2;
                         text-align: justify;
                         column-gap: 2em;
@@ -678,7 +680,7 @@ body {
                     position: relative;
                     display: flex;
                     margin: 20px 0;
-                    border-radius: 8px;
+                    border-radius: 1em;
                     box-shadow: var(--GlowUp);
 
                     &__title {
@@ -784,6 +786,7 @@ body {
                 width: 85%;
                 top: 10%;
                 height: 80%;
+                overflow: visible;
 
                 .swiper {
                     width: 85%;
@@ -796,6 +799,8 @@ body {
                         display: flex;
                         flex-direction: column;
                         column-gap: 3em;
+                        border-radius: 1em;
+                        // box-shadow: none;
 
                         &.imgonly {
                             @media screen and (max-width: 1200px) {
@@ -816,7 +821,6 @@ body {
                                 height: auto;
                             }
 
-                            border-radius: 1em;
                             transition: all 1s ease;
                             animation: fadeEffect 0.6s ease;
                             margin: auto;
@@ -859,6 +863,8 @@ body {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    border-radius: 1em;
+                    box-shadow: var(--GlowUp);
 
                     &.spacearnd {
                         justify-content: space-around;
@@ -900,6 +906,8 @@ body {
                 margin: auto;
                 transition: 0.3s ease;
                 max-height: 90%;
+                box-shadow: var(--GlowUp);
+                border-radius: 1em;
 
                 @media screen and (max-width: 512px) {
                     margin: 0 4%;
@@ -916,7 +924,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 height: 80px;
-                border-radius: 2px 2px 0px 0px;
+                border-radius: 1em 1em 0px 0px;
 
                 @media screen and (max-width: 512px) {
                     height: 40px;
@@ -941,6 +949,7 @@ body {
                 font-family: "IBM Plex Sans", sans-serif;
                 overflow: hidden;
                 transition: 0.3s ease;
+                border-radius: 1em 1em 0px 0px;
 
                 @media screen and (max-width: 512px) {
                     height: 40px;
@@ -1070,7 +1079,8 @@ body {
                 position: relative;
                 opacity: 1;
                 padding: 40px 60px;
-                // overflow: hidden;
+                overflow: hidden;
+                border-radius: 0px 0px 1em 1em;
                 transition: all 1s ease;
                 top: 0;
             }
@@ -1078,7 +1088,6 @@ body {
             .tabcontent {
                 display: none;
                 min-height: 180px;
-
             }
 
             @keyframes tabEffect {
@@ -1198,7 +1207,7 @@ body {
 
                 &:hover {
                     transform: scale(1.1);
-                    background-color: var(--justtheme);
+                    background-color: var(--background2);
 
                     p {
                         color: var(--justoppositeoftheme);
@@ -1257,8 +1266,9 @@ body {
             }
 
             .form-field__control {
-                background: var(--orange);
+                background: var(--glass);
                 border-radius: 1em;
+                box-shadow: var(--GlowUp);
                 overflow: hidden;
                 position: relative;
                 width: 100%;
@@ -1294,7 +1304,7 @@ body {
             }
 
             .form-field__textarea {
-                height: 50vh;
+                height: 40vh;
             }
 
             // <-- page id : Contact --> **Stop**
