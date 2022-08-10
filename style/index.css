@@ -832,6 +832,8 @@ body .content .block .swiper .swiper .swiper-slide {
      -moz-column-gap: 3em;
           column-gap: 3em;
   border-radius: 1em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media screen and (max-width: 1200px) {
   body .content .block .swiper .swiper .swiper-slide.imgonly {
