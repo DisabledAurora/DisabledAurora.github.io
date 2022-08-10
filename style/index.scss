@@ -806,7 +806,7 @@ body {
                         flex-direction: column;
                         column-gap: 3em;
                         border-radius: 1em;
-                        // box-shadow: none;
+                        box-shadow: none;
 
                         &.imgonly {
                             @media screen and (max-width: 1200px) {
