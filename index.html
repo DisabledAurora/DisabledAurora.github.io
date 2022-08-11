@@ -1,681 +1,428 @@
-<!doctype html>
-<html lang="en">
-
+<!doctypehtml>
+<html lang=en>
 <head>
-    <meta charset="utf-8">
-    <title>Gururam</title>
-    <meta name="description" content="This website is entitled to Subramanian Gururam of Engineering Science,
+<meta charset=utf-8>
+<title>Gururam</title>
+<meta content="This website is entitled to Subramanian Gururam of Engineering Science,
     Ngee Ann Polytechnic, batch 2020. The purpose of this documentation is to prepare for any E-portfolio
-    requirements that may be posed upon me in the near future." />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/style/index.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="icon" type="image/x-icon" href="/img/tabicon.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
-        integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII=" crossorigin="anonymous"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"
-        integrity="sha256-6nMNBYfyROdV6ao6x/RnA8pcQvmL2OH3B+oDZ+EEcmk=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-    <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/905e574296.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="./app/manifest.json" />
-    <meta name="theme-color" content="#bada55" />
-    <link rel="apple-touch-icon" href="./app/icons/icon-512x512.png" />
-    <meta name="apple-mobile-web-app-status-bar" content="#bada55" />
+    requirements that may be posed upon me in the near future."name=description>
+<meta content="width=device-width,initial-scale=1"name=viewport>
+<link href=/style/minified.css rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"rel=stylesheet>
+<link href=/img/tabicon.ico rel=icon type=image/x-icon>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js crossorigin=anonymous integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII="></script>
+<script src=https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js crossorigin=anonymous integrity="sha256-6nMNBYfyROdV6ao6x/RnA8pcQvmL2OH3B+oDZ+EEcmk="></script>
+<script src=https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/vue@2.6.14></script>
+<script src=https://unpkg.com/zooming/build/zooming.min.js></script>
+<!-- https://kangax.github.io/html-minifier/ --><!-- https://uncss-online.com/ --><!-- https://github.com/terser/terser --><!-- https://via.placeholder.com/100.webp/000/fff --><!-- https://github.com/aFarkas/lazysizes -->
+<link href=https://fonts.googleapis.com rel=preconnect>
+<link href=https://fonts.gstatic.com rel=preconnect crossorigin>
+<script src=https://kit.fontawesome.com/905e574296.js crossorigin=anonymous></script>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"rel=stylesheet>
+<link href=https://unpkg.com/swiper@8/swiper-bundle.min.css rel=stylesheet>
+<script src=https://unpkg.com/swiper@8/swiper-bundle.min.js></script>
+<meta content="width=device-width,initial-scale=1"name=viewport>
+<link href=./app/manifest.json rel=manifest>
+<meta content=#bada55 name=theme-color>
+<link href=./app/icons/icon-512x512.png rel=apple-touch-icon>
+<meta content=#bada55 name=apple-mobile-web-app-status-bar>
 </head>
-
 <body>
-    <div class="fire" id="Intro">
-        <div class="flames">
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-        </div>
-        <div class="logs"></div>
-    </div>
-    <header>
-        <a>
-            <pre class="term"></pre>
-        </a>
-    </header>
-    <section class="top" id="home">
-        <div id="clock">
-            <p class="date" id="date">{{ date }}</p>
-            <p class="time" id="time">{{ time }}</p>
-        </div>
-        <!-- <model-viewer class="Right" src="/threejsModel/Pistol_and_Kukri/scene.gltf" camera-controls auto-rotate touch-action
-            rotation-per-second="45deg" auto-rotate-delay="500" interaction-prompt-style="wiggle">
-        </model-viewer> -->
-        <div class="Right">
-            <img src="/img/Tri.svg">
-        </div>
-        <img src="/img/starsEx.webp" id="stars" alt="Spread out white star like figures to create ambience">
-        <img src="/img/moon_1.webp" id="moon" alt="Moon is quite of the hallmark of the parallax design">
-        <img src="/img/mountains_behind_1.webp" id="mountb" alt="Mountain range, associated to being the background">
-        <h2 id="message">Bonjour!</h2>
-        <img src="/img/mountains_front_1.webp" id="mountf" alt="Mountain range, associated to being the foreground">
-        <div class="scroll-down"></div>
-        <ul class="menu" id="fmenu">
-            <li class="home active">
-                <a href="#home" class="items"><span class="material-symbols-rounded">
-                        home
-                    </span></a>
-            </li>
-            <li class="aboutme">
-                <a href="#aboutme" class="items"><span class="material-symbols-rounded">
-                        account_circle
-                    </span></a>
-            </li>
-            <li class="timeline">
-                <a href="#timeline" class="items"><span class="material-symbols-rounded">
-                        timeline
-                    </span></a>
-            </li>
-            <li class="Projects">
-                <a href="#Projects" class="items"><span class="material-symbols-rounded">
-                        bolt
-                    </span></a>
-            </li>
-            <li class="Achievements">
-                <a href="#Achievements" class="items"><span class="material-symbols-rounded">
-                        whatshot
-                    </span></a>
-            </li>
-            <li class="workHistory">
-                <a href="#workHistory" class="items"><span class="material-symbols-rounded">
-                        work_history
-                    </span></a>
-            </li>
-            <li class="Contact">
-                <a href="#Contact" class="items"><span class="material-symbols-rounded">
-                        diversity_1
-                    </span></a>
-            </li>
-        </ul>
-    </section>
-    <section id="aboutme">
-        <div id="particles-js">
-            <div class="content">
-                <h2 style="color: #0ee3d1;">
-                    About me
-                </h2>
-                <div class="block">
-                    <div class="row">
-                        <div class="column">
-                            <div class="descriptionaboutme">
-                                <p>
-                                    I am Subramanian Gururam, scholar pursuing Engineering Science at Ngee Ann
-                                    Polytechnic. I am passionate about defying the odds and achieving greatness. I would
-                                    regard myself as a visionary person as much as I give attention to details. My
-                                    vision in life is to be a conscientious man, to contribute back to the society.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="stage-cube-cont">
-                                <div class="cubespinner">
-                                    <div class="face1">
-                                        <i class="fa-brands fa-sass" style="color: #c26290;"></i>
-                                    </div>
-                                    <div class="face2">
-                                        <i class="fa-brands fa-python" style="color: #f3c74b;"></i>
-                                    </div>
-                                    <div class="face3">
-                                        <i class="fa-brands fa-js-square" style="color: #ebd130;"></i>
-                                    </div>
-                                    <div class="face4">
-                                        <i class="fa-brands fa-html5" style="color: #e55b2b;"></i>
-                                    </div>
-                                    <div class="face5">
-                                        <i class="fa-brands fa-git-alt" style="color: #e44632;"></i>
-                                    </div>
-                                    <div class="face6">
-                                        <i class="fa-brands fa-atlassian" style="color: #0055c0;"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="timeline">
-        <div id="particles-js1">
-            <div class="content">
-                <h2>
-                    Education Progress
-                </h2>
-                <div class="block" style="overflow: auto; pointer-events: auto; display: block;">
-                    <div class="timeline">
-                        <div class="timeline__event timeline__event--type1">
-                            <div class="timeline__event__icon ">
-                                <div class="timeline__event__date">
-                                    2010 - 2016
-                                </div>
-                            </div>
-                            <div class="timeline__event__content ">
-                                <div class="timeline__event__title">
-                                    Primary school
-                                </div>
-                                <div class="timeline__event__description">
-                                    <p>West Grove Primary School</p>
-                                    <img src="/img/PrimarySchImg.webp" class="imgzoom">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline__event timeline__event--type2">
-                            <div class="timeline__event__icon">
-                                <div class="timeline__event__date">
-                                    2017 - 2020
-                                </div>
-                            </div>
-                            <div class="timeline__event__content">
-                                <div class="timeline__event__title">
-                                    Secondary School
-                                </div>
-                                <div class="timeline__event__description">
-                                    <p>Yuan Ching Secondary School</p>
-                                    <img src="/img/SecSchImg.webp" class="imgzoom">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline__event timeline__event--type3">
-                            <div class="timeline__event__icon">
-                                <i class="lni-slim"></i>
-                                <div class="timeline__event__date">
-                                    2021 - Present
-                                </div>
-                            </div>
-                            <div class="timeline__event__content">
-                                <div class="timeline__event__title">
-                                    Pre-University
-                                </div>
-                                <div class="timeline__event__description">
-                                    <p>Ngee Ann Polytechnic</p>
-                                    <img src="/img/PreUImg.webp" class="imgzoom">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="Projects">
-        <div id="particles-js2">
-            <div class="content">
-                <h2>
-                    Projects
-                </h2>
-                <div class="block" style="overflow: hidden; pointer-events: auto; display: block;">
-                    <div class="swiper mySwiper swiper-h">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="swiper mySwiper2 swiper-v">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <p>Mechanical Engineering Fundementals <br> Project 1</p>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <p>
-                                                MEF introduces students to the study of external forces in two
-                                                dimensions and their effect on particles and
-                                                rigid bodies that are at rest. Students learn the skills to analyse the
-                                                forces acting on the bodies by drawing free-body
-                                                diagrams and applying the conditions of equilibrium. Topics include
-                                                forces and resultants, moments and couples,
-                                                equilibrium and the concepts of plane friction. This module also aims to
-                                                equip students with the skills to analyse
-                                                problems of rigid bodies in motion. Only linear motion in two dimensions
-                                                will be covered. Topics include kinematics and
-                                                kinetics of linear motion.
-                                            </p>
-                                        </div>
-                                        <div class="swiper-slide split">
-                                            <p>This project is aimed to allow students to apply knowledge and skills in
-                                                resolution of vectors and kinematics of linear motion to estimate the
-                                                horizontal distance travelled by a projectile. The process of creating
-                                                the model from scratch was a fun and made me better understand the
-                                                concept of motion.</p>
-                                            <img class="card-img imgzoom hori" src="/img/MEF_P1_img1.webp">
-                                        </div>
-                                        <div class="swiper-slide imgonly"><img class="card-img imgzoom hori"
-                                                src="/img/MEF_P1_img2.webp">
-                                        </div>
-                                        <div class="swiper-slide"><a
-                                                href="https://drive.google.com/file/d/1tyjh1illZ7_EFpr3mRam1NWgdCbJ9am1/view?usp=sharing">
-                                                <p>More information about project is provided here</p>
-                                            </a></div>
-                                    </div>
-                                    <div class="swiper-pagination swiper-pagination2"></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper mySwiper2 swiper-v">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <p>Mechanical Engineering Fundementals <br> Project 2</p>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <p>
-                                                MEF introduces students to the study of external forces in two
-                                                dimensions and their effect on particles and
-                                                rigid bodies that are at rest. Students learn the skills to analyse the
-                                                forces acting on the bodies by drawing free-body
-                                                diagrams and applying the conditions of equilibrium. Topics include
-                                                forces and resultants, moments and couples,
-                                                equilibrium and the concepts of plane friction. This module also aims to
-                                                equip students with the skills to analyse
-                                                problems of rigid bodies in motion. Only linear motion in two dimensions
-                                                will be covered. Topics include kinematics and
-                                                kinetics of linear motion.
-                                            </p>
-                                        </div>
-                                        <div class="swiper-slide split">
-                                            <p>
-                                                Project 2 of MEF aims to apply knowledge and skills in drawing of free
-                                                body diagrams, resolution of vectors and
-                                                moments and couples to analyse the throwing performance of the launching
-                                                arm and to
-                                                determine the best position to secure the rubber band onto the launching
-                                                arm.
-                                            </p>
-                                            <img src="/img/MEF_p2_img1.webp" class="card-img imgzoom vert">
-                                        </div>
-                                        <div class="swiper-slide imgonly"><img src="/img/MEF_p2_img2.webp"
-                                                class="imgzoom card-img vert"></div>
-                                        <div class="swiper-slide"><a
-                                                href="https://drive.google.com/file/d/1K_SIjiUWGYDMdCPPdSaCUUCm_6y5mWct/view?usp=sharing">
-                                                <p>More information about project is provided here</p>
-                                            </a></div>
-                                    </div>
-                                    <div class="swiper-pagination swiper-pagination2"></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper mySwiper2 swiper-v">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <p>Integrated Real-world 3 <br> Project 1</p>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <p>
-                                                IRP3 aims to integrate the knowledge learnt in the semester and
-                                                apply to a real-world project with service
-                                                learning as the main emphasis. Students will work in teams and deploy
-                                                their projects at service learning partners’
-                                                premises. On completion of the module, students will be able to apply
-                                                the skills and develop confidence in delivering
-                                                projects at the higher levels.
-                                            </p>
-                                        </div>
-                                        <div class="swiper-slide split">
-                                            <p>This project is aimed to allow students, explore the different problems
-                                                that exists in the society and come up with engineering based solutions,
-                                                in order to help them. It teaches the student to critical think and
-                                                understand what it takes to incubate ideas which is useful to the
-                                                general public.</p>
-                                            <img class="card-img imgzoom hori" src="/img/irp3_usp_img1.webp">
-                                        </div>
-                                        <div class="swiper-slide imgonly"><img class="card-img imgzoom vert"
-                                                src="/img/irp3_usp_img2.webp">
-                                        </div>
-                                        <div class="swiper-slide"><a
-                                                href="https://drive.google.com/file/d/1fo0fXmMvGsPrB-BP3uh71pD8JAP44z8K/view?usp=sharing">
-                                                <p>More information about project is provided here</p>
-                                            </a></div>
-                                    </div>
-                                    <div class="swiper-pagination swiper-pagination2"></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper mySwiper2 swiper-v">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <p>Object-Oriented Programming<br> Project 1</p>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <p>
-                                                OOPG introduces object-oriented programming to students who
-                                                already have a foundation in procedural programming.
-                                                It covers the fundamental concepts of object-oriented programming with
-                                                introduction to basic web and database
-                                                applications.
-                                            </p>
-                                        </div>
-                                        <div class="swiper-slide split">
-                                            <p>This project is aimed to allow students to familiarise themselves with
-                                                HyperText Markup Language and its related subsidiaries such as CSS and
-                                                Javascript to certain extend, through the use of ASP.Net MVC application
-                                                framework. Through this project, I truly learnt the capabilities of web
-                                                development and its design aspect in particular.</p>
-                                            <img class="card-img imgzoom vert" src="/img/oopg_img1.webp">
-                                        </div>
-                                        <div class="swiper-slide imgonly"><img class="card-img imgzoom vert"
-                                                src="/img/oopg_img2.webp">
-                                        </div>
-                                        <div class="swiper-slide"><a
-                                                href="https://ivid2.np.edu.sg/media/OOPG+Project/1_wgmxsjjk">
-                                                <p>More information about project is provided here</p>
-                                            </a></div>
-                                    </div>
-                                    <div class="swiper-pagination swiper-pagination2"></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper mySwiper2 swiper-v">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <p>Data Structures & Algorithms <br> Project 2</p>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <p>
-                                                DSAG focus is on algorithms, not user interface. Code
-                                                implementation platform is mainly C++. Basic data
-                                                structures covered in this module include array, linked-list, stack,
-                                                queue and binary search tree. For each of these
-                                                data structure, students learn to devise algorithms, where appropriate,
-                                                to add, to delete, to search or to sort data
-                                                etc. Brief introduction to encryption and hash coding concepts are
-                                                covered in advanced topics leading to an appreciation
-                                                of block-chain technology from software perspective.
-
-                                            </p>
-                                        </div>
-                                        <div class="swiper-slide split">
-                                            <p>This project is aimed to allow students to better understand the
-                                                programming behind a console based application, and also to discover
-                                                real world problems that are solvable through programming.</p>
-                                            <img class="card-img imgzoom hori" src="/img/dsag_p2_img1.webp">
-                                        </div>
-                                        <div class="swiper-slide imgonly"><img class="card-img imgzoom hori"
-                                                src="/img/dsag_p2_img2.webp">
-                                        </div>
-                                        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=DS1IFvSwSkM">
-                                                <p>More information about project is provided here</p>
-                                            </a></div>
-                                    </div>
-                                    <div class="swiper-pagination swiper-pagination2"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <!-- <div class="swiper-scrollbar"></div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="Achievements">
-        <div id="particles-js3">
-            <div class="content">
-                <h2>
-                    Achievements
-                </h2>
-                <div class="block" style="overflow: auto; pointer-events: auto; display: block;">
-                    <div class="swiper mySwiper3">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide spacearnd">
-                                <h2 style="font-size: 2.1vmax;">
-                                    Year 2018 - Year 2019
-                                </h2>
-                                <p> Sergeant Rank – NPCC<br>
-                                    ICAS Science – UNSW Global<br>
-                                    Marksmenship – NPCC<br>
-                                    Young Engineer Award (Sliver)
-
-                                </p>
-                            </div>
-                            <div class="swiper-slide spacearnd">
-                                <h2 style="font-size: 2.1vmax;">
-                                    Year 2016 - Year 2017
-                                </h2>
-                                <p>
-                                    Certification of Merit – NPCC Challenge Shield <br>
-                                    (Certificate, that remembers and appreciates<br>the achievements of NPCC
-                                    cadets.)<br>
-                                    Young Engineer Award (Bronze)<br>
-                                    Cadet of the Year – NPCC<br>
-                                    Australian Mathematics Competition – Australian Mathematics Trust
-                                </p>
-                            </div>
-                            <div class="swiper-slide spacearnd">
-                                <h2 style="font-size: 2.1vmax;">
-                                    Year 2012 - Year 2015
-                                </h2>
-                                <p>
-                                    ICAS Mathematics – UNSW Global <br>
-                                    ICAS Science – UNSW Global <br>
-                                    1st in Class – WGPS
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next-3"></div>
-                        <div class="swiper-button-prev-3"></div>
-                        <div class="swiper-pagination-3"></div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section id="workHistory">
-        <div id="particles-js4">
-            <div class="content">
-                <h2>
-                    Work History
-                </h2>
-                <div class="block" style="overflow: auto; pointer-events: auto; display: block;">
-                    <div id="Tabby">
-                        <div class="cox">
-                            <!-- Tab links -->
-                            <div class="tabs">
-                                <button class="tablinks active" data-country="GLS">
-                                    <p data-title="GLS">GLS</p>
-                                </button>
-                                <button class="tablinks" data-country="Redmart">
-                                    <p data-title="Redmart">Redmart</p>
-                                </button>
-                                <button class="tablinks" data-country="Usher">
-                                    <p data-title="MBCC">MBCC</p>
-                                </button>
-                                <button class="tablinks" data-country="STE">
-                                    <p data-title="STE">ST Engineering</p>
-                                </button>
-                            </div>
-
-                            <!-- Tab content -->
-                            <div class="wrapper_tabcontent">
-                                <div id="GLS" class="tabcontent active">
-                                    <p>- Ad hoc working environment, with varying job intensity.<br />
-                                        - Assigned and was able to shift products weighing about 20 kg
-                                        occasionally.<br />
-                                        - Used pre-established automated systems to carry out product listing.
-                                    </p>
-                                    <img src="/img/GLS.webp" class="card-img imgzoom">
-                                </div>
-
-                                <div id="Redmart" class="tabcontent">
-                                    <p class="smol">- Maintaining inbound statistics and orders, ranging up to 30'000
-                                        products in a
-                                        single order.
-                                        <br />
-                                        - Quality checks on received products, rectifying any anomalies in
-                                        check, including but not limited to,
-                                        short-expiry issues, overdelivered, partial delivery and incorrect data.
-                                        <br />
-                                        - Maintain error-free system logs for the products received, for future audits,
-                                        inspections, and product cross-checking.
-                                    </p>
-                                    <img src="https://pngimage.net/wp-content/uploads/2018/06/redmart-logo-png-2.png"
-                                        class="card-img">
-                                </div>
-
-                                <div id="Usher" class="tabcontent">
-                                    <p>-Basic ushering and crowd-control was practiced, with training.
-                                        <br />
-                                        -Checking-in and accounting for the passenger count were the main roles in this
-                                        job.
-                                    </p>
-                                    <img src="/img/mbcc.webp" class="card-img imgzoom">
-                                </div>
-
-                                <div id="STE" class="tabcontent">
-                                    <p>Working at ST Engineering is my first ever official Internship that I have gone
-                                        to. From a structured school and education lifestyle, to an unstructured, and
-                                        new environment, this internship gave me the opportunity to experience what it
-                                        takes to be a working adult in the industry. Taught me a lot of technical as
-                                        well as social skills, that I previously lack.</p>
-                                    <img src="/img/Intern.webp" class="card-img imgzoomxtra">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="Contact">
-        <div id="particles-js5">
-            <div class="content">
-                <h2>
-                    Contact
-                </h2>
-                <div class="alert success-alert nodisplaynow" id="success">
-                    <h3>Success!</h3>
-                    <a class="close">&times;</a>
-                </div>
-
-                <div class="alert danger-alert nodisplaynow" id="failure">
-                    <h3>Try again!</h3>
-                    <a class="close">&times;</a>
-                </div>
-                <div class="block" style="overflow: auto; pointer-events: auto; display: flex;">
-
-                    <form novalidate>
-                        <div class="col-sm">
-                            <div class="form-field">
-                                <div class="form-field__control">
-                                    <label for="Name" class="form-field__label">Name</label>
-                                    <input id="Name" type="text" class="form-field__input" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-field">
-                                <div class="form-field__control">
-                                    <label for="Email" class="form-field__label">Email</label>
-                                    <input id="Email" type="email" class="form-field__input" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-field">
-                                <div class="form-field__control">
-                                    <label for="msg" class="form-field__label">Message</label>
-                                    <textarea id="msg" class="form-field__textarea"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="submitbutton" onclick="sendMail()">
-                            <p>Send!</p>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- JS scripts -->
-
-    <!-- Registering the service worker. -->
-    <script type="text/javascript">
-        if (navigator.serviceWorker.controller) {
-            console.log('[PWA Builder] Active service worker found! No registeration was done.')
-        }
-        else {
-            navigator.serviceWorker.register('app-build.js', {
-                scope: '/'
-            }).then(function (reg) {
-                console.log('[PWA Builder] Service worker created for scope: ' + reg.scope);
-            });
-        }
-    </script>
-
-    <script>
-        // Listen to images after DOM content is fully loaded
-        document.addEventListener('DOMContentLoaded', function () {
-            new Zooming({
-                // options...
-                bgColor: 'rgba(0,0,0,0)',
-                customSize: '50%',
-                scaleExtra: 1.1,
-            }).listen('.imgzoom')
-            new Zooming({
-                // options...
-                bgColor: 'rgba(0,0,0,0)',
-                customSize: '50%',
-                scaleExtra: 2,
-            }).listen('.imgzoomxtra')
-        })
-    </script>
-
-    <!-- Initializing the emailjs service. -->
-    <script type="text/javascript">
-            (function () {
-                emailjs.init("ic9Xg-Qbtzwgw84Ng");
-            })();
-    </script>
-
-    <!-- threeJS management -->
-
-    <!-- Imports of external JS > Particles -->
-    <script src="/js_particles/particles/particles.js"></script>
-    <script async src="/js_particles/app/app.js"></script>
-    <script src="/js_particles/particles/particles1.js"></script>
-    <script async src="/js_particles/app/app1.js"></script>
-    <script src="/js_particles/particles/particles2.js"></script>
-    <script async src="/js_particles/app/app2.js"></script>
-    <script src="/js_particles/particles/particles3.js"></script>
-    <script async src="/js_particles/app/app3.js"></script>
-    <script src="/js_particles/particles/particles4.js"></script>
-    <script async src="/js_particles/app/app4.js"></script>
-    <script src="/js_particles/particles/particles5.js"></script>
-    <script async src="/js_particles/app/app5.js"></script>
-
-    <!-- Imports of external JS > General -->
-    <script src="/js_basic/Carousel.js"></script>
-    <script src="/js_basic/Checkbox.js"></script>
-    <script src="/js_basic/clock.js"></script>
-    <script src="/js_basic/Console.js"></script>
-    <script src="/js_basic/Emailsend.js"></script>
-    <script src="/js_basic/Menu.js"></script>
-    <script src="/js_basic/Parallex.js"></script>
-    <script src="/js_basic/Splash.js"></script>
-    <script src="/js_basic/swiper.js"></script>
-    <script src="/js_basic/Tabs.js"></script>
-    <script src="/js_basic/contactform.js"></script>
-    <script src="/js_basic/buttonalert.js"></script>
+<div class=fire id=Intro>
+<div class=flames>
+<div class=flame></div>
+<div class=flame></div>
+<div class=flame></div>
+<div class=flame></div>
+</div>
+<div class=logs></div>
+</div>
+<header><a>
+<pre class=term></pre>
+</a></header>
+<section id=home class=top>
+<div id=clock>
+<p class=date id=date>{{ date }}</p>
+<p class=time id=time>{{ time }}</p>
+</div>
+<div class=Right><picture><source data-srcset=/img/Tri.svg><img alt="logo svg"class=lazyload data-src=/img/Tri.svg loading=lazy src=https://via.placeholder.com/100.webp/000/fff></picture></div><picture>
+<source data-srcset=/img/starsEx.webp><img alt=stars class=lazyload data-src=/img/starsEx.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff id=stars>
+</picture><picture>
+<source data-srcset=/img/moon_1.webp><img alt=moon class=lazyload data-src=/img/moon_1.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff id=moon>
+</picture><picture>
+<source data-srcset=/img/mountains_behind_1.webp><img alt="mountains found at the background"class=lazyload data-src=/img/mountains_behind_1.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff id=mountb>
+</picture>
+<h2 id=message>Bonjour!</h2><picture>
+<source data-srcset=/img/mountains_front_1.webp><img alt="mountains found at the foreground"class=lazyload data-src=/img/mountains_front_1.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff id=mountf>
+</picture>
+<div class=scroll-down></div>
+<ul class=menu id=fmenu>
+<li class="active home"><a href=#home class=items><span class=material-symbols-rounded>home</span></a>
+</li>
+<li class=aboutme><a href=#aboutme class=items><span class=material-symbols-rounded>account_circle</span></a></li>
+<li class=timeline><a href=#timeline class=items><span class=material-symbols-rounded>timeline</span></a></li>
+<li class=Projects><a href=#Projects class=items><span class=material-symbols-rounded>bolt</span></a>
+</li>
+<li class=Achievements><a href=#Achievements class=items><span class=material-symbols-rounded>whatshot</span></a></li>
+<li class=workHistory><a href=#workHistory class=items><span class=material-symbols-rounded>work_history</span></a></li>
+<li class=Contact><a href=#Contact class=items><span class=material-symbols-rounded>diversity_1</span></a></li>
+</ul>
+</section>
+<section id=aboutme>
+<div id=particles-js>
+<div class=content>
+<h2 style=color:#0ee3d1>About me</h2>
+<div class=block>
+<div class=row>
+<div class=column>
+<div class=descriptionaboutme>
+<p>I am Subramanian Gururam, scholar pursuing Engineering Science at Ngee Ann Polytechnic. I am passionate about defying the odds and achieving greatness. I would regard myself as a visionary person as much as I give attention to details. My vision in life is to be a conscientious man, to contribute back to the society.</p>
+</div>
+</div>
+<div class=column>
+<div class=stage-cube-cont>
+<div class=cubespinner>
+<div class=face1><i class="fa-brands fa-sass"style=color:#c26290></i></div>
+<div class=face2><i class="fa-brands fa-python"style=color:#f3c74b></i></div>
+<div class=face3><i class="fa-brands fa-js-square"style=color:#ebd130></i>
+</div>
+<div class=face4><i class="fa-brands fa-html5"style=color:#e55b2b></i></div>
+<div class=face5><i class="fa-brands fa-git-alt"style=color:#e44632></i></div>
+<div class=face6><i class="fa-brands fa-atlassian"style=color:#0055c0></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=timeline>
+<div id=particles-js1>
+<div class=content>
+<h2>Education Progress</h2>
+<div class=block style=overflow:auto;pointer-events:auto;display:block>
+<div class=timeline>
+<div class="timeline__event timeline__event--type1">
+<div class=timeline__event__icon>
+<div class=timeline__event__date>2010 - 2016</div>
+</div>
+<div class=timeline__event__content>
+<div class=timeline__event__title>Primary school</div>
+<div class=timeline__event__description>
+<p>West Grove Primary School</p><picture>
+<source data-srcset=img\PrimarySchImg.webp><img alt="primary school images"class="lazyload imgzoom"data-src=img\PrimarySchImg.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+</div>
+</div>
+<div class="timeline__event timeline__event--type2">
+<div class=timeline__event__icon>
+<div class=timeline__event__date>2017 - 2020</div>
+</div>
+<div class=timeline__event__content>
+<div class=timeline__event__title>Secondary School</div>
+<div class=timeline__event__description>
+<p>Yuan Ching Secondary School</p><picture>
+<source data-srcset=img\SecSchImg.webp><img alt="secondary school images"class="lazyload imgzoom"data-src=img\SecSchImg.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+</div>
+</div>
+<div class="timeline__event timeline__event--type3">
+<div class=timeline__event__icon><i class=lni-slim></i>
+<div class=timeline__event__date>2021 - Present</div>
+</div>
+<div class=timeline__event__content>
+<div class=timeline__event__title>Pre-University</div>
+<div class=timeline__event__description>
+<p>Ngee Ann Polytechnic</p><picture>
+<source data-srcset=img\PreUImg.webp><img alt="pre-university school images"class="lazyload imgzoom"data-src=img\PreUImg.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=Projects>
+<div id=particles-js2>
+<div class=content>
+<h2>Projects</h2>
+<div class=block style=overflow:hidden;pointer-events:auto;display:block>
+<div class="swiper mySwiper swiper-h">
+<div class=swiper-wrapper>
+<div class=swiper-slide>
+<div class="swiper mySwiper2 swiper-v">
+<div class=swiper-wrapper>
+<div class=swiper-slide>
+<p>Mechanical Engineering Fundementals<br>Project 1</p>
+</div>
+<div class=swiper-slide>
+<p>MEF introduces students to the study of external forces in two dimensions and their effect on particles and rigid bodies that are at rest. Students learn the skills to analyse the forces acting on the bodies by drawing free-body diagrams and applying the conditions of equilibrium. Topics include forces and resultants, moments and couples, equilibrium and the concepts of plane friction. This module also aims to equip students with the skills to analyse problems of rigid bodies in motion. Only linear motion in two dimensions will be covered. Topics include kinematics and kinetics of linear motion.
+</p>
+</div>
+<div class="swiper-slide split">
+<p>This project is aimed to allow students to apply knowledge and skills in resolution of vectors and kinematics of linear motion to estimate the horizontal distance travelled by a projectile. The process of creating the model from scratch was a fun and made me better understand the concept of motion.</p><picture>
+<source data-srcset=img\MEF_P1_img1.webp><img alt="MEF project 1 → Image 1"class="lazyload imgzoom card-img hori"data-src=img\MEF_P1_img1.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+<div class="swiper-slide imgonly"><picture>
+<source data-srcset=img\MEF_P1_img2.webp><img alt="MEF project 1 → Image 2"class="lazyload imgzoom card-img hori"data-src=img\MEF_P1_img2.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture></div>
+<div class=swiper-slide><a href="https://drive.google.com/file/d/1tyjh1illZ7_EFpr3mRam1NWgdCbJ9am1/view?usp=sharing">
+<p>More information about project is provided here</p>
+</a></div>
+</div>
+<div class="swiper-pagination swiper-pagination2"></div>
+</div>
+</div>
+<div class=swiper-slide>
+<div class="swiper mySwiper2 swiper-v">
+<div class=swiper-wrapper>
+<div class=swiper-slide>
+<p>Mechanical Engineering Fundementals<br>Project 2</p>
+</div>
+<div class=swiper-slide>
+<p>MEF introduces students to the study of external forces in two dimensions and their effect on particles and rigid bodies that are at rest. Students learn the skills to analyse the forces acting on the bodies by drawing free-body diagrams and applying the conditions of equilibrium. Topics include forces and resultants, moments and couples, equilibrium and the concepts of plane friction. This module also aims to equip students with the skills to analyse problems of rigid bodies in motion. Only linear motion in two dimensions will be covered. Topics include kinematics and kinetics of linear motion.
+</p>
+</div>
+<div class="swiper-slide split">
+<p>Project 2 of MEF aims to apply knowledge and skills in drawing of free body diagrams, resolution of vectors and moments and couples to analyse the throwing performance of the launching arm and to determine the best position to secure the rubber band onto the launching arm.</p><picture>
+<source data-srcset=img\MEF_P2_img1.webp><img alt="MEF project 2 → Image 1"class="lazyload imgzoom card-img vert"data-src=img\MEF_P2_img1.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+<div class="swiper-slide imgonly"><picture>
+<source data-srcset=img\MEF_P2_img2.webp><img alt="MEF project 2 → Image 2"class="lazyload imgzoom card-img vert"data-src=img\MEF_P2_img2.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture></div>
+<div class=swiper-slide><a href="https://drive.google.com/file/d/1K_SIjiUWGYDMdCPPdSaCUUCm_6y5mWct/view?usp=sharing">
+<p>More information about project is provided here</p>
+</a></div>
+</div>
+<div class="swiper-pagination swiper-pagination2"></div>
+</div>
+</div>
+<div class=swiper-slide>
+<div class="swiper mySwiper2 swiper-v">
+<div class=swiper-wrapper>
+<div class=swiper-slide>
+<p>Integrated Real-world 3<br>Project 1</p>
+</div>
+<div class=swiper-slide>
+<p>IRP3 aims to integrate the knowledge learnt in the semester and apply to a real-world project with service learning as the main emphasis. Students will work in teams and deploy their projects at service learning partners’ premises. On completion of the module, students will be able to apply the skills and develop confidence in delivering projects at the higher levels.</p>
+</div>
+<div class="swiper-slide split">
+<p>This project is aimed to allow students, explore the different problems that exists in the society and come up with engineering based solutions, in order to help them. It teaches the student to critical think and understand what it takes to incubate ideas which is useful to the general public.</p><picture>
+<source data-srcset=img\irp3_usp_img1.webp><img alt="IRP unstructured project → Image 1"class="lazyload imgzoom card-img hori"data-src=img\irp3_usp_img1.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+<div class="swiper-slide imgonly"><picture>
+<source data-srcset=img\irp3_usp_img2.webp><img alt="IRP unstructured project → Image 2"class="lazyload imgzoom card-img vert"data-src=img\irp3_usp_img2.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture></div>
+<div class=swiper-slide><a href="https://drive.google.com/file/d/1fo0fXmMvGsPrB-BP3uh71pD8JAP44z8K/view?usp=sharing">
+<p>More information about project is provided here</p>
+</a></div>
+</div>
+<div class="swiper-pagination swiper-pagination2"></div>
+</div>
+</div>
+<div class=swiper-slide>
+<div class="swiper mySwiper2 swiper-v">
+<div class=swiper-wrapper>
+<div class=swiper-slide>
+<p>Object-Oriented Programming<br>Project 1</p>
+</div>
+<div class=swiper-slide>
+<p>OOPG introduces object-oriented programming to students who already have a foundation in procedural programming. It covers the fundamental concepts of object-oriented programming with introduction to basic web and database applications.</p>
+</div>
+<div class="swiper-slide split">
+<p>This project is aimed to allow students to familiarise themselves with HyperText Markup Language and its related subsidiaries such as CSS and Javascript to certain extend, through the use of ASP.Net MVC application framework. Through this project, I truly learnt the capabilities of web development and its design aspect in particular.
+</p><picture>
+<source data-srcset=img\oopg_img1.webp><img alt="oopg project 1 → Image 1"class="lazyload imgzoom card-img hori"data-src=img\oopg_img1.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+<div class="swiper-slide imgonly"><picture>
+<source data-srcset=img\oopg_img2.webp><img alt="IRP unstructured project → Image 2"class="lazyload imgzoom card-img hori"data-src=img\oopg_img2.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture></div>
+<div class=swiper-slide><a href=https://ivid2.np.edu.sg/media/OOPG+Project/1_wgmxsjjk>
+<p>More information about project is provided here</p>
+</a></div>
+</div>
+<div class="swiper-pagination swiper-pagination2"></div>
+</div>
+</div>
+<div class=swiper-slide>
+<div class="swiper mySwiper2 swiper-v">
+<div class=swiper-wrapper>
+<div class=swiper-slide>
+<p>Data Structures & Algorithms<br>Project 2</p>
+</div>
+<div class=swiper-slide>
+<p>DSAG focus is on algorithms, not user interface. Code implementation platform is mainly C++. Basic data structures covered in this module include array, linked-list, stack, queue and binary search tree. For each of these data structure, students learn to devise algorithms, where appropriate, to add, to delete, to search or to sort data etc. Brief introduction to encryption and hash coding concepts are covered in advanced topics leading to an appreciation of block-chain technology from software perspective.</p>
+</div>
+<div class="swiper-slide split">
+<p>This project is aimed to allow students to better understand the programming behind a console based application, and also to discover real world problems that are solvable through programming.</p><picture>
+<source data-srcset=img\dsag_p2_img1.webp><img alt="dsag project 2 → Image 1"class="lazyload imgzoom card-img hori"data-src=img\dsag_p2_img1.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+<div class="swiper-slide imgonly"><picture>
+<source data-srcset=img\dsag_p2_img2.webp><img alt="dsag project 2 → Image 2"class="lazyload imgzoom card-img hori"data-src=img\dsag_p2_img2.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture></div>
+<div class=swiper-slide><a href="https://www.youtube.com/watch?v=DS1IFvSwSkM">
+<p>More information about project is provided here</p>
+</a></div>
+</div>
+<div class="swiper-pagination swiper-pagination2"></div>
+</div>
+</div>
+</div>
+<div class=swiper-pagination></div>
+<div class=swiper-button-prev></div>
+<div class=swiper-button-next></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=Achievements>
+<div id=particles-js3>
+<div class=content>
+<h2>Achievements</h2>
+<div class=block style=overflow:auto;pointer-events:auto;display:block>
+<div class="swiper mySwiper3">
+<div class=swiper-wrapper>
+<div class="swiper-slide spacearnd">
+<h2 style=font-size:2.1vmax>Year 2018 - Year 2019</h2>
+<p>Sergeant Rank – NPCC<br>ICAS Science – UNSW Global<br>Marksmenship – NPCC<br>Young Engineer Award (Sliver)</p>
+</div>
+<div class="swiper-slide spacearnd">
+<h2 style=font-size:2.1vmax>Year 2016 - Year 2017</h2>
+<p>Certification of Merit – NPCC Challenge Shield<br>(Certificate, that remembers and appreciates<br>the achievements of NPCC cadets.)<br>Young Engineer Award (Bronze)<br>Cadet of the Year – NPCC<br>Australian Mathematics Competition – Australian Mathematics Trust</p>
+</div>
+<div class="swiper-slide spacearnd">
+<h2 style=font-size:2.1vmax>Year 2012 - Year 2015</h2>
+<p>ICAS Mathematics – UNSW Global<br>ICAS Science – UNSW Global<br>1st in Class – WGPS</p>
+</div>
+</div>
+<div class=swiper-button-next-3></div>
+<div class=swiper-button-prev-3></div>
+<div class=swiper-pagination-3></div>
+</div>
+</div>
+</div>
+</section>
+<section id=workHistory>
+<div id=particles-js4>
+<div class=content>
+<h2>Work History</h2>
+<div class=block style=overflow:auto;pointer-events:auto;display:block>
+<div id=Tabby>
+<div class=cox>
+<div class=tabs><button class="tablinks active"data-country=GLS>
+<p data-title=GLS>GLS</p>
+</button> <button class=tablinks data-country=Redmart>
+<p data-title=Redmart>Redmart</p>
+</button> <button class=tablinks data-country=Usher>
+<p data-title=MBCC>MBCC</p>
+</button> <button class=tablinks data-country=STE>
+<p data-title=STE>ST Engineering</p>
+</button></div>
+<div class=wrapper_tabcontent>
+<div class="tabcontent active"id=GLS>
+<p>- Ad hoc working environment, with varying job intensity.<br>- Assigned and was able to shift products weighing about 20 kg occasionally.<br>- Used pre-established automated systems to carry out product listing.</p><picture>
+<source data-srcset=img\GLS.webp><img alt="gls enterprise"class="lazyload imgzoom card-img"data-src=img\GLS.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+<div class=tabcontent id=Redmart>
+<p class=smol>- Maintaining inbound statistics and orders, ranging up to 30'000 products in a single order.<br>- Quality checks on received products, rectifying any anomalies in check, including but not limited to, short-expiry issues, overdelivered, partial delivery and incorrect data.<br>- Maintain error-free system logs for the products received, for future audits, inspections, and product cross-checking.</p>
+</div>
+<div class=tabcontent id=Usher>
+<p>-Basic ushering and crowd-control was practiced, with training.<br>-Checking-in and accounting for the passenger count were the main roles in this job.</p><picture>
+<source data-srcset=img\mbcc.webp><img alt="mbcc enterprise"class="lazyload imgzoom card-img"data-src=img\mbcc.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+<div class=tabcontent id=STE>
+<p>Working at ST Engineering is my first ever official Internship that I have gone to. From a structured school and education lifestyle, to an unstructured, and new environment, this internship gave me the opportunity to experience what it takes to be a working adult in the industry. Taught me a lot of technical as well as social skills, that I previously lack.</p><picture>
+<source data-srcset=img\Intern.webp><img alt="STE enterprise"class="lazyload card-img imgzoomxtra"data-src=img\Intern.webp loading=lazy src=https://via.placeholder.com/100.webp/000/fff>
+</picture>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=Contact>
+<div id=particles-js5>
+<div class=content>
+<h2>Contact</h2>
+<div class="alert nodisplaynow success-alert"id=success>
+<h3>Success!</h3><a class=close>×</a>
+</div>
+<div class="alert nodisplaynow danger-alert"id=failure>
+<h3>Try again!</h3><a class=close>×</a>
+</div>
+<div class=block style=overflow:auto;pointer-events:auto;display:flex>
+<form novalidate>
+<div class=col-sm>
+<div class=form-field>
+<div class=form-field__control><label class=form-field__label for=Name>Name</label>
+<input class=form-field__input id=Name>
+</div>
+</div>
+</div>
+<div class=col-sm>
+<div class=form-field>
+<div class=form-field__control><label class=form-field__label for=Email>Email</label> <input class=form-field__input id=Email type=email>
+</div>
+</div>
+</div>
+<div class=col-sm>
+<div class=form-field>
+<div class=form-field__control><label class=form-field__label for=msg>Message</label> <textarea class=form-field__textarea id=msg></textarea></div>
+</div>
+</div><button class=submitbutton onclick=sendMail() type=button>
+<p>Send!</p>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<script>navigator.serviceWorker.controller?console.log("[PWA Builder] Active service worker found! No registeration was done."):navigator.serviceWorker.register("app-build.js",{scope:"/"}).then(function(e){console.log("[PWA Builder] Service worker created for scope: "+e.scope)})</script>
+<script>document.addEventListener("DOMContentLoaded",function(){new Zooming({bgColor:"rgba(0,0,0,0)",customSize:"50%",scaleExtra:1.1}).listen(".imgzoom"),new Zooming({bgColor:"rgba(0,0,0,0)",customSize:"50%",scaleExtra:2}).listen(".imgzoomxtra")})</script>
+<script>emailjs.init("ic9Xg-Qbtzwgw84Ng")</script>
+<script>if("loading"in HTMLImageElement.prototype){var images=document.querySelectorAll('img[loading="lazy"]'),sources=document.querySelectorAll("source[data-srcset]");sources.forEach(function(e){e.srcset=e.dataset.srcset}),images.forEach(function(e){e.src=e.dataset.src})}else{var script=document.createElement("script");script.src="/js_basic/lazysizes.min.js",document.body.appendChild(script)}</script>
+<script src=/js_particles/particles/particles.js></script>
+<script src=/js_particles/app/app.js async></script>
+<script src=/js_particles/particles/particles1.js></script>
+<script src=/js_particles/app/app1.js async></script>
+<script src=/js_particles/particles/particles2.js></script>
+<script src=/js_particles/app/app2.js async></script>
+<script src=/js_particles/particles/particles3.js></script>
+<script src=/js_particles/app/app3.js async></script>
+<script src=/js_particles/particles/particles4.js></script>
+<script src=/js_particles/app/app4.js async></script>
+<script src=/js_particles/particles/particles5.js></script>
+<script src=/js_particles/app/app5.js async></script>
+<script src=/js_basic/Carousel.js></script>
+<script src=/js_basic/Checkbox.js></script>
+<script src=/js_basic/clock.js></script>
+<script src=/js_basic/Console.js></script>
+<script src=/js_basic/Emailsend.js></script>
+<script src=/js_basic/Menu.js></script>
+<script src=/js_basic/Parallex.js></script>
+<script src=/js_basic/Splash.js></script>
+<script src=/js_basic/swiper.js></script>
+<script src=/js_basic/Tabs.js></script>
+<script src=/js_basic/contactform.js></script>
+<script src=/js_basic/buttonalert.js></script>
+<script src=/js_basic/lazysizes.min.js async></script>
 </body>
-
 </html>
