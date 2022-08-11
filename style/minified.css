@@ -388,6 +388,11 @@ body section img#stars {
 body section img#moon {
   mix-blend-mode: screen;
 }
+@media screen and (max-width: 1200px) {
+  body canvas {
+    visibility: hidden;
+  }
+}
 body #particles-js {
   height: 100vh;
   width: 100%;
@@ -1102,7 +1107,7 @@ body .content .block .tabcontent.active img.card-img {
   margin: auto;
 }
 @media screen and (max-width: 1200px) {
-  body .content .block .tabcontent.active img.card-img {
+  body .content .block .tabcontent.active picture {
     display: none;
   }
 }
