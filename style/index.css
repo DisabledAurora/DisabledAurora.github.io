@@ -901,8 +901,6 @@ body .content .block .swiper .swiper-slide {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 1em;
-  -webkit-box-shadow: var(--GlowUp);
-          box-shadow: var(--GlowUp);
 }
 body .content .block .swiper .swiper-slide.spacearnd {
   -ms-flex-pack: distribute;
